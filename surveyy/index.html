@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music Listening Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+  <h1 id="title">Music Listening Survey</h1>
+  <p id="description">We’d love to know how you listen to music! Fill out this quick form to share your habits and preferences.</p>
+  <form id="survey-form" action="#" method="post">
+  <div class="field">
+  <label id="name-label" for="name">Full Name</label>
+  <input id="name" name="name" type="text" placeholder="Enter your name" required />
+  </div>
+  <div class="field">
+  <label id="email-label" for="email">Email Address</label>
+  <input id="email" name="email" type="email" placeholder="Enter your email" required />
+  </div>
+  <div class="field">
+  <label id="number-label" for="number">Hours Listening per Day</label>
+  <input id="number" name="hours" type="number" min="0" max="24" placeholder="Enter hours" required />
+  </div>
+  <div class="field">
+  <label for="dropdown">Favorite Genre</label>
+  <select id="dropdown" name="genre">
+  <option value="pop">Pop</option>
+  <option value="rock">Rock</option>
+  <option value="classical">Classical</option>
+  <option value="kpop">K-Pop</option>
+  <option value="jpop" selected>J-Pop</option>
+  </select>
+  </div>
+  <fieldset class="field">
+  <legend>Listening Activities You Enjoy</legend>
+  <label><input type="checkbox" name="activities" value="alone" /> Listening Alone</label>
+  <label><input type="checkbox" name="activities" value="withfriends" /> Listening with Friends</label>
+  <label><input type="checkbox" name="activities" value="concerts" /> Going to Concerts</label>
+  </fieldset>
+  <fieldset class="field">
+  <legend>Preferred Music Platform</legend>
+  <label><input type="radio" name="platform" value="spotify" /> Spotify</label>
+  <label><input type="radio" name="platform" value="applemusic" /> Apple Music</label>
+  <label><input type="radio" name="platform" value="youtube" /> YouTube</label>
+  </fieldset>
+  <div class="field">
+  <label for="comments">Additional Comments</label>
+  <textarea id="comments" name="comments" rows="5" placeholder="Your comments..."></textarea>
+  </div>
+      <div class="field">
+        <button id="submit" type="submit">Submit Feedback</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
